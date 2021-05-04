@@ -34,12 +34,13 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 30px 0;
+  padding: 37px 0;
   border-bottom: 1px solid #ccc;
 }
 
 nav .logo {
   width: 51px;
+  margin-left: 80px;
 }
 
 nav .logo img {
@@ -53,6 +54,7 @@ nav .menu {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-right: 40px;
 }
 
 nav .menu li {
@@ -71,7 +73,7 @@ nav .menu li a {
 }
 
 .sectionOne {
-  height: calc(100vh - 116px);
+  height: calc(100vh - 130px);
   width: 100%;
   display: -ms-grid;
   display: grid;
@@ -80,7 +82,7 @@ nav .menu li a {
 
 .sectionOne .carrocelImg {
   width: 100%;
-  height: calc(100vh - 116px);
+  height: calc(100vh - 130px);
   grid-area: "carrocelImg";
 }
 
@@ -110,7 +112,6 @@ nav .menu li a {
 
 .sectionOne .carrocelImg .biochectomia .buttom {
   border: 2px solid black;
-  text-align: center;
 }
 
 .sectionOne .carrocelImg .biochectomia .buttom a img {
@@ -121,11 +122,32 @@ nav .menu li a {
 
 .sectionOne .modeloImg {
   width: 100%;
-  height: calc(100vh - 116px);
+  height: calc(100vh - 130px);
   grid-area: " modeloImg";
   position: relative;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  text-align: right;
+  margin: 12px 0 0 0;
+}
+
+.sectionOne .modeloImg .div-float-left {
+  position: absolute;
+  right: 0;
+  top: -12px;
+  width: 237px;
+  height: 12px;
+  background-color: chocolate;
+}
+
+.sectionOne .modeloImg .div-float-right {
+  position: absolute;
+  right: 237px;
+  top: 0;
+  height: 12px;
+  width: 305px;
+  background-color: #683c09;
+}
+
+.sectionOne .modeloImg img {
+  width: 545px;
 }
 /*# sourceMappingURL=index.css.map */

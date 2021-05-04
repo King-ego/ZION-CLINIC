@@ -1,12 +1,12 @@
 .sectionOne{
-    height: calc(100vh - 116px);
+    height: calc(100vh - 130px);
     width: 100%;
     display: grid;
     grid-template-areas: 
     'carrocelImg modeloImg';
     .carrocelImg{
         width: 100%;
-        height: calc(100vh - 116px);
+        height: calc(100vh - 130px);
         grid-area: "carrocelImg";
         @extend .flex;
         .biochectomia{
@@ -30,7 +30,6 @@
             }
             .buttom{
                 border: 2px solid black;
-                text-align: center;
                 a{
                     img{
                         width: 100px;
@@ -43,10 +42,30 @@
     }
     .modeloImg{
         width: 100%;
-        height: calc(100vh - 116px);
+        height: calc(100vh - 130px);
         grid-area:" modeloImg";
         position: relative;
-        justify-content: center;
+        text-align: right;
+        margin: 12px 0 0 0;
+        .div-float-left{
+            position: absolute;
+            right: 0;
+            top:-12px;
+            width: 237px;
+            height: 12px;
+            background-color: chocolate;
+        }
+        .div-float-right{
+            position: absolute;
+            right: 237px;
+            top: 0;
+            height: 12px;
+            width: 305px;
+            background-color: rgb(104, 60, 9);
+        }
+        img{
+            width: 545px;
+        }
         
     }
 }

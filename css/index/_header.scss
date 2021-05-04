@@ -3,10 +3,11 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 0;
+    padding: 37px 0;
     border-bottom: 1px solid #ccc;
     .logo{
         width: 51px;
+        margin-left: 80px;
         img{
             width: 100%;
         }
@@ -15,6 +16,7 @@ nav{
         list-style: none;
         display: flex;
         flex-wrap: wrap;
+        margin-right: 40px;
         li{
             margin: 0 10px;
             flex-wrap: wrap;
