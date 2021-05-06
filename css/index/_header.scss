@@ -4,26 +4,26 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 37px 0;
-    border-bottom: 1px solid #ccc;
-    .logo{
-        width: 51px;
-        margin-left: 80px;
-        img{
-            width: 100%;
-        }
+    border-bottom: 1px solid #ccc;    
+}
+.logo{
+    width: 51px;
+    margin-left: 80px;
+    img{
+        width: 100%;
     }
-    .menu{
-        list-style: none;
-        display: flex;
+}
+.menu{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 40px;
+    li{
+        margin: 0 10px;
         flex-wrap: wrap;
-        margin-right: 40px;
-        li{
-            margin: 0 10px;
-            flex-wrap: wrap;
-            a{
-                text-decoration: none;
-                color: #000;
-            }
+        a{
+            text-decoration: none;
+            color: #000;
         }
     }
 }

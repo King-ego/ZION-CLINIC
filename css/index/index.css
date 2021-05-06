@@ -7,7 +7,7 @@
           box-sizing: border-box;
 }
 
-.flex, .sectionOne .carrocelImg {
+.flex, .carrocelImg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -38,16 +38,16 @@ nav {
   border-bottom: 1px solid #ccc;
 }
 
-nav .logo {
+.logo {
   width: 51px;
   margin-left: 80px;
 }
 
-nav .logo img {
+.logo img {
   width: 100%;
 }
 
-nav .menu {
+.menu {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -57,13 +57,13 @@ nav .menu {
   margin-right: 40px;
 }
 
-nav .menu li {
+.menu li {
   margin: 0 10px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
-nav .menu li a {
+.menu li a {
   text-decoration: none;
   color: #000;
 }
@@ -73,35 +73,40 @@ nav .menu li a {
 }
 
 .sectionOne {
-  height: calc(100vh - 130px);
   width: 100%;
   display: -ms-grid;
   display: grid;
       grid-template-areas: 'carrocelImg modeloImg';
 }
 
-.sectionOne .carrocelImg {
+.carrocelImg {
   width: 100%;
-  height: calc(100vh - 130px);
   grid-area: "carrocelImg";
 }
 
-.sectionOne .carrocelImg .biochectomia {
+.biochectomia {
+  height: calc(100vh - 130px);
   width: 400px;
+  display: none;
 }
 
-.sectionOne .carrocelImg .biochectomia h1 {
+.biochectomia h1 {
   font-size: 1.875em;
   font-size: 30pt;
   margin: 70px 0;
 }
 
-.sectionOne .carrocelImg .biochectomia p {
+.biochectomia p {
   width: 200px;
   margin: 70px 0 40px 0;
 }
 
-.sectionOne .carrocelImg .biochectomia .moreKnow {
+.biochectomia .buttom span img {
+  width: 100px;
+  border-radius: 50px;
+}
+
+.moreKnow {
   margin-bottom: 130px;
   cursor: pointer;
   border: none;
@@ -110,17 +115,7 @@ nav .menu li a {
   padding: 10px;
 }
 
-.sectionOne .carrocelImg .biochectomia .buttom {
-  border: 2px solid black;
-}
-
-.sectionOne .carrocelImg .biochectomia .buttom a img {
-  width: 100px;
-  border: 1px solid red;
-  border-radius: 50px;
-}
-
-.sectionOne .modeloImg {
+.modeloImg {
   width: 100%;
   height: calc(100vh - 130px);
   grid-area: " modeloImg";
@@ -129,7 +124,11 @@ nav .menu li a {
   margin: 12px 0 0 0;
 }
 
-.sectionOne .modeloImg .div-float-left {
+.modeloImg img {
+  width: 545px;
+}
+
+.div-float-left {
   position: absolute;
   right: 0;
   top: -12px;
@@ -138,7 +137,7 @@ nav .menu li a {
   background-color: chocolate;
 }
 
-.sectionOne .modeloImg .div-float-right {
+.div-float-right {
   position: absolute;
   right: 237px;
   top: 0;
@@ -147,7 +146,9 @@ nav .menu li a {
   background-color: #683c09;
 }
 
-.sectionOne .modeloImg img {
-  width: 545px;
+.active {
+  display: block;
+  -webkit-transition-delay: 20s;
+          transition-delay: 20s;
 }
 /*# sourceMappingURL=index.css.map */
