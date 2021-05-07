@@ -101,11 +101,6 @@ nav {
   margin: 70px 0 40px 0;
 }
 
-.biochectomia .buttom span img {
-  width: 100px;
-  border-radius: 50px;
-}
-
 .moreKnow {
   margin-bottom: 130px;
   cursor: pointer;
@@ -113,6 +108,11 @@ nav {
   color: black;
   background-color: orange;
   padding: 10px;
+}
+
+.buttom span img {
+  width: 100px;
+  border-radius: 50px;
 }
 
 .modeloImg {
@@ -144,6 +144,10 @@ nav {
   height: 12px;
   width: 305px;
   background-color: #683c09;
+}
+
+.newClass {
+  display: none;
 }
 
 .active {

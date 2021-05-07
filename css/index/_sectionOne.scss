@@ -22,14 +22,6 @@
         width: 200px;
         margin: 70px 0 40px 0;
     }
-    .buttom{
-        span{
-            img{
-                width: 100px;
-                border-radius: 50px;
-            }
-        }
-    }
 }
 .moreKnow{
     margin-bottom: 130px;
@@ -39,7 +31,14 @@
     background-color: orange;
     padding: 10px;
 }
-
+.buttom{
+    span{
+        img{
+            width: 100px;
+            border-radius: 50px;
+        }
+    }
+}
 .modeloImg{
     width: 100%;
     height: calc(100vh - 130px);
@@ -67,6 +66,9 @@
     height: 12px;
     width: 305px;
     background-color: rgb(104, 60, 9);
+}
+.newClass{
+    display: none;
 }
 .active{
     display: block;
