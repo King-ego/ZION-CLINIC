@@ -18,9 +18,25 @@ nav{
     display: flex;
     flex-wrap: wrap;
     margin-right: 40px;
-    li{
+    .lineMenu{
         margin: 0 10px;
         flex-wrap: wrap;
+        position: relative;
+        cursor: pointer;
+        &::before{
+            content: "";
+            transition: 200ms;
+            width: 0;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border-bottom:2px solid orange ;            
+        }
+        &:hover::before{
+            border-bottom:2px solid orange ;
+            width: 100%;
+        }
         a{
             text-decoration: none;
             color: #000;
@@ -28,5 +44,13 @@ nav{
     }
 }
 .lineBottom{
-    border-bottom: 2px solid orange;
+    border-bottom:2px solid orange ;
+    margin: 0 10px;
+    flex-wrap: wrap;
+    position: relative;
+    cursor: pointer;
+    a{
+        text-decoration: none;
+        color: #000;
+    }
 }

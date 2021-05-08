@@ -57,19 +57,48 @@ nav {
   margin-right: 40px;
 }
 
-.menu li {
+.menu .lineMenu {
   margin: 0 10px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  position: relative;
+  cursor: pointer;
 }
 
-.menu li a {
+.menu .lineMenu::before {
+  content: "";
+  -webkit-transition: 200ms;
+  transition: 200ms;
+  width: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 2px solid orange;
+}
+
+.menu .lineMenu:hover::before {
+  border-bottom: 2px solid orange;
+  width: 100%;
+}
+
+.menu .lineMenu a {
   text-decoration: none;
   color: #000;
 }
 
 .lineBottom {
   border-bottom: 2px solid orange;
+  margin: 0 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+  cursor: pointer;
+}
+
+.lineBottom a {
+  text-decoration: none;
+  color: #000;
 }
 
 .sectionOne {
