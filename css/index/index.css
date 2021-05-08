@@ -35,7 +35,10 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   padding: 37px 0;
-  border-bottom: 1px solid #ccc;
+}
+
+.buttomMenu {
+  display: none;
 }
 
 .logo {
@@ -102,6 +105,7 @@ nav {
 }
 
 .sectionOne {
+  height: calc(100vh - 130px);
   width: 100%;
   display: -ms-grid;
   display: grid;
@@ -109,14 +113,15 @@ nav {
 }
 
 .carrocelImg {
+  margin: 0 auto;
   width: 100%;
   grid-area: "carrocelImg";
 }
 
 .biochectomia {
-  height: calc(100vh - 130px);
-  width: 400px;
+  min-width: 400px;
   display: none;
+  margin-left: 50px;
 }
 
 .biochectomia h1 {
@@ -145,12 +150,12 @@ nav {
 }
 
 .modeloImg {
-  width: 100%;
-  height: calc(100vh - 130px);
+  max-width: 100%;
+  min-width: 400px;
   grid-area: " modeloImg";
   position: relative;
   text-align: right;
-  margin: 12px 0 0 0;
+  overflow: hidden;
 }
 
 .modeloImg img {
@@ -176,6 +181,7 @@ nav {
 }
 
 .newClass {
+  margin: 12px 0 0 0;
   display: none;
 }
 
@@ -183,5 +189,26 @@ nav {
   display: block;
   -webkit-transition-delay: 20s;
           transition-delay: 20s;
+}
+
+@media (max-width: 870px) {
+  .menu {
+    display: none;
+    position: absolute;
+    background-color: red;
+    right: 5vw;
+    width: 180px;
+    padding: 5px 0;
+  }
+  .menu li {
+    padding: 10px 0;
+  }
+  .buttomMenu {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    cursor: pointer;
+  }
 }
 /*# sourceMappingURL=index.css.map */

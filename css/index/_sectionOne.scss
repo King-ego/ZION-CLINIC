@@ -1,18 +1,20 @@
 .sectionOne{
+    height: calc(100vh - 130px);
     width: 100%;
     display: grid;
     grid-template-areas: 
     'carrocelImg modeloImg';
 }
 .carrocelImg{
+    margin: 0 auto;
     width: 100%;
     grid-area: "carrocelImg";
     @extend .flex;
 }
 .biochectomia{
-    height: calc(100vh - 130px);
-    width: 400px;
+    min-width: 400px;
     display: none;
+    margin-left: 50px;
     h1{
         font-size: 1.875em;
         font-size: 30pt;
@@ -40,12 +42,12 @@
     }
 }
 .modeloImg{
-    width: 100%;
-    height: calc(100vh - 130px);
+    max-width: 100%;
+    min-width: 400px;
     grid-area:" modeloImg";
     position: relative;
     text-align: right;
-    margin: 12px 0 0 0;
+    overflow: hidden;
     img{
         width: 545px;
     }
@@ -68,6 +70,7 @@
     background-color: rgb(104, 60, 9);
 }
 .newClass{
+    margin: 12px 0 0 0;
     display: none;
 }
 .active{

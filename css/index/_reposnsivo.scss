@@ -1,0 +1,20 @@
+@media (max-width:870px) {
+    .menu{
+        display: none;
+        position: absolute;
+        background-color: red;
+        right: 5vw;
+        width: 180px;
+        padding: 5px 0;
+        li{
+            padding: 10px 0;
+        }
+    }
+    .buttomMenu{
+        display: block;
+        width: 30px;
+        height: 30px;
+        background-color: red;
+        cursor: pointer;
+    }
+}
