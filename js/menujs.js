@@ -1,25 +1,13 @@
 (function(){
     const width = document.querySelector('.menu')
-    const li = width.querySelectorAll('li')
-    function classSpaceAdd(){
-        for (let allLiAdd of li){
-            allLiAdd.classList.add('classSpace')
-        }
-    }
-    function classSpaceRemove(){
-        for (let allLiRemove of li){
-            allLiRemove.classList.remove('classSpace')
-        }
-    }
     function styleWidhtResize(wth){
         if(wth<870){
             width.style.position = 'absolute';
-            classSpaceAdd()
             return;
         }
         if(wth > 870){
-            width.style.position = 'relative'
-            classSpaceRemove()
+            width.style.position = 'relative';
+            return;
         }
     }
     function widthResize(wth){
@@ -42,11 +30,11 @@
     window.addEventListener('resize', resize)
     function addClassMenu(wth){
         if(wth>870){
-            document.querySelector('.buttomMenu').classList.add('animate__backInLeft')
+            document.querySelector('.buttomMenu').classList.add('animate__fadeInLeft')
             return;
         }
         if(wth < 870){
-            width.classList.add('animate__backInRight')
+            width.classList.add('animate__fadeInRight')
             return;
         }
         
