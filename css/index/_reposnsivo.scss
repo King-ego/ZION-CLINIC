@@ -2,8 +2,8 @@
     .menu{
         display: none;
         position: absolute;
-        background-color: red;
-        right: 5vw;
+        background-color: $backgroundColor;
+        right: 0;
         width: 180px;
         padding: 5px 0;
         li{
@@ -14,7 +14,15 @@
         display: block;
         width: 30px;
         height: 30px;
-        background-color: red;
         cursor: pointer;
+        span{
+            background-color: $fontColor;
+            display: block;
+            width: 30px;
+            min-height: 5px;
+            &:not(:last-child){
+                margin-bottom: 2px;
+              }
+        }
     }
 }

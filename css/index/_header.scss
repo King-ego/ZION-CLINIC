@@ -1,10 +1,19 @@
-nav{
-    width: 100%;
+header{
+    position: relative;
+    z-index: 999;
+    background-color: $backgroundColor;
+}
+.nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 37px 0;
+    position: relative;
+    &__widthFixed{
+        width: 100vw;
+    }
 }
+
 .buttomMenu{
     display: none;
 }
@@ -17,12 +26,12 @@ nav{
 }
 #containerMenu{
     position: relative;
+    margin-right: 40px;
 }
 .menu{
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    margin-right: 40px;
     .lineMenu{
         margin: 0 10px;
         flex-wrap: wrap;
@@ -36,10 +45,10 @@ nav{
             bottom: 0;
             left: 0;
             right: 0;
-            border-bottom:2px solid orange ;            
+            border-bottom:2px solid $squareOne ;            
         }
         &:hover::before{
-            border-bottom:2px solid orange ;
+            border-bottom:2px solid $squareOne ;
             width: 100%;
         }
         a{
@@ -49,7 +58,7 @@ nav{
     }
 }
 .lineBottom{
-    border-bottom:2px solid orange ;
+    border-bottom:2px solid $squareOne ;
     margin: 0 10px;
     flex-wrap: wrap;
     position: relative;
@@ -58,4 +67,14 @@ nav{
         text-decoration: none;
         color: #000;
     }
+}
+.moveHeader{
+    position: fixed;
+    z-index: 999;
+}
+.leftItemMenu{
+    left:80px
+}
+.rightItemMenu{
+    right:40px;
 }

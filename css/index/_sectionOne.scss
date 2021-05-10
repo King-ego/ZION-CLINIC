@@ -1,79 +1,107 @@
-.sectionOne{
+.sectionOne {
     height: calc(100vh - 130px);
     width: 100%;
     display: grid;
-    grid-template-areas: 
-    'carrocelImg modeloImg';
+    grid-template-areas: "carrocelImg modeloImg";
 }
-.carrocelImg{
+.carrocelImg {
     margin: 0 auto;
     width: 100%;
     grid-area: "carrocelImg";
     @extend .flex;
 }
-.biochectomia{
+.biochectomia {
     min-width: 400px;
     display: none;
     margin-left: 50px;
-    h1{
+    h1 {
         font-size: 1.875em;
         font-size: 30pt;
-        margin:70px 0;
+        margin: 70px 0;
     }
-    p{
+    p {
         width: 200px;
         margin: 70px 0 40px 0;
     }
 }
-.moreKnow{
+.moreKnow {
     margin-bottom: 130px;
-    cursor: pointer;
-    border: none;
-    color: black;
-    background-color: orange;
-    padding: 10px;
+    a {
+        width: 40px;
+        cursor: pointer;
+        border: none;
+        background-color: $squareOne;
+        padding: 10px;
+        position: relative;
+        text-decoration: none;
+        &:hover::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            animation: mymove 1s infinite;
+        }
+    }
 }
-.buttom{
-    span{
-        img{
+@keyframes mymove {
+    0% {
+        border: 0px;
+    }
+    25% {
+        border: 3px solid $squareOne;
+    }
+    50% {
+        border: 7px solid $squareOne;
+    }
+    75% {
+        border: 3px solid $squareOne;
+    }
+    100% {
+        border: 0px;
+    }
+}
+.buttom {
+    span {
+        img {
             width: 100px;
             border-radius: 50px;
         }
     }
 }
-.modeloImg{
+.modeloImg {
     max-width: 100%;
     min-width: 400px;
-    grid-area:" modeloImg";
+    grid-area: " modeloImg";
     position: relative;
     text-align: right;
     overflow: hidden;
-    img{
+    img {
         width: 545px;
     }
-    
 }
-.div-float-left{
+.div-float-left {
     position: absolute;
     right: 0;
-    top:-12px;
+    top: -12px;
     width: 237px;
     height: 12px;
-    background-color: chocolate;
+    background-color: $squareTwo;
 }
-.div-float-right{
+.div-float-right {
     position: absolute;
     right: 237px;
     top: 0;
     height: 12px;
     width: 305px;
-    background-color: rgb(104, 60, 9);
+    background-color: $squareOne;
 }
-.newClass{
+.newClass {
     margin: 12px 0 0 0;
     display: none;
 }
-.active{
+.active {
     display: block;
     transition-delay: 20s;
 }

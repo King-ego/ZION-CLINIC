@@ -17,7 +17,7 @@
             addClassMenu(wth)
             return;
         }
-        if(wth<870) {
+        if(wth<=870) {
             width.style.display = 'none';
             addClassMenu(wth)
             return;
@@ -31,10 +31,6 @@
     function addClassMenu(wth){
         if(wth>870){
             document.querySelector('.buttomMenu').classList.add('animate__fadeInLeft')
-            return;
-        }
-        if(wth < 870){
-            width.classList.add('animate__fadeInRight')
             return;
         }
         
